@@ -1,0 +1,20 @@
+##FACTORIAL OF A NUMBER
+
+#for loop
+
+n=int(input('enter a number'))
+fact=1
+for i in range(n,0,-1):
+	fact*=i
+print(fact)
+
+####
+
+#while loop
+
+n=int(input('enter a number'))
+fact=1
+while n>0:
+	fact*=n
+	n-=1
+print(fact)
