@@ -1,0 +1,126 @@
+##PRIME NUMBER (divisible by 1 and itself)
+
+##for loop
+
+n=int(input('enter a number'))
+count=0
+for i in range(1,n+1):
+	if n%i==0:
+		count+=1
+if count==2:
+	print(n,' is a prime number')
+else:
+	print(n,' is  not a prime number')
+
+#####
+
+n=int(input('enter a number'))
+for i in range(2,n):
+	if n%i==0:
+		print(n,' is a prime number')
+		break
+else:
+	print(n,' is  not a prime number')
+
+##while loop
+
+n=int(input('enter a number'))
+count=0
+i=1
+while i<=n:
+	if n%i==0:
+		count+=1
+	i+=1
+if count==2:
+	print(n,' is a prime number')
+else:
+	print(n,' is not a prime number')
+
+#####
+
+n=int(input('enter a number'))
+i=2
+while i<n:
+	if n%i==0:
+		print(n,' is not a prime number')
+		break
+	i+=1
+else:
+	print(n,' is a prime number')
+
+#####
+
+##To print prime number before a number
+
+a=int(input('enter a starting range'))
+for j in range(a-1,1,-1):#(a,1,-1)
+	for i in range(2,j):
+		if j%i==0:
+			break
+	else:
+			print(j,end=" ")
+			break
+
+#####
+
+##To print prime number After a number
+
+a=int(input('enter a starting range'))
+j=a
+while True:
+	for i in range(2,j):
+		if j%i==0:
+			break
+	else:
+			print(j,end=" ")
+			break
+	j+=1
+
+#####
+
+##To print prime numbers of a range
+
+a=int(input('enter a starting range'))
+b=int(input('entet a ending range'))
+for j in range(a,b+1):
+	for i in range(2,j):
+		if j%i==0:
+			break
+	else:
+			print(j,end=" ")
+
+#####
+
+##To print nearest prime of a number
+
+#before prime number
+a=int(input('enter a starting range '))
+for j in range(a-1,1,-1):
+	for i in range(2,j):
+		if j%i==0:
+			#print(j,' is not a prime number')
+			break
+	else:
+			bp=j
+			print(j)
+			break
+			
+#Next prime number
+a=int(input('enter a starting range'))
+k=a
+while True:
+	for i in range(2,k):
+		if k%i==0:
+			#print(j,' is not a prime number')
+			break
+	else:
+		ap=k
+		print(k)
+		break
+	k+=1
+if(abs(a-ap)>abs(a-bp)):
+	print('nearest prime is ',bp)
+elif(abs(a-ap)==abs(a-bp)):
+	print('nearest prime is ',ap,bp)
+else:
+	print('nearest prime is ',ap)
