@@ -1,4 +1,4 @@
-##PERFECT NUMBER(sum of divisibiloties of a number is number  itself- 6=3+2+1=6)
+##PERFECT NUMBER(sum of divisibilities of a number is number  itself-> 6=3+2+1=6)
 
 n=int(input('enter a number'))
 s=0
