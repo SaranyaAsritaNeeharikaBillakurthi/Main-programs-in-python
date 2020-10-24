@@ -1,10 +1,28 @@
 ##PERFECT NUMBER(sum of divisibilities of a number is number  itself-> 6=3+2+1=6)
 
+##For loop
+
 n=int(input('enter a number'))
 s=0
 for i in range(1,n):
 	if n%i==0:
 		s=s+i
+if s==n:
+	print(n,' is a perfect number')
+else:
+	print(n,' is not a perfect number')
+
+#####
+
+##while loop
+
+n=int(input('enter a number'))
+s=0
+i=1
+while i<n:
+	if n%i==0:
+		s+=i
+	i+=1
 if s==n:
 	print(n,' is a perfect number')
 else:
