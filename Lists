@@ -1,0 +1,187 @@
+##To find length of a
+
+a = [2,3,6,0,7,3]
+for i in range(0,len(a)):
+    print(a[i])
+
+#####
+
+a = [2,3,6,0,7,3]
+for i in range(0,len(a)):
+    print(i,':',a[i])
+
+#####
+
+a = [2,3,6,0,7,3]
+for i in a:
+    print(i)
+
+#####
+
+##To print length of a without using default function:
+
+a = [4,5,2,6,2,6,6,9]
+cnt = 0
+for i in a:
+    cnt+=1
+print(cnt)
+
+#####
+
+a = [4,5,3,2,2,6,1,33,56,24,11]
+def length(a):
+    cnt = 0
+    for i in a:
+        cnt+=1
+    return(cnt)
+print(length(a))
+
+#####
+
+a=['virat','sachin','dohni','rohit']
+def length(a):
+    cnt=0
+    for i in a:
+        cnt+=1
+    return(cnt)
+print(length(a))
+
+#####
+
+##How many times a element repeated in list:
+
+a=[2,3,4,3,5,8,1]
+print(a.count(3))
+
+#####
+
+a = [2,3,4,3,5,8,1]
+cnt = 0
+for i in a:
+    if i==3:
+        cnt+=1
+print(cnt)
+
+#####
+
+a = [2,3,4,3,5,8,1]
+cnt = 0
+b = int(input('enter a number to check: '))
+for i in a:
+    if i==b:
+        cnt =+ 1
+print(cnt)
+
+#####
+
+##Maximum and minimum elements in a list:
+
+a=[3,9,4,6,2,5]
+print(max(a),min(a))
+
+#####
+
+##Minimum:
+
+a=[3,9,4,6,2,5]
+m=a[0]
+for i in a:
+    if i<m:
+        m=i
+print(m)
+
+#####
+
+a=[3,9,4,6,2,5]
+m=a[0]
+for i in a:
+    if i>m:
+        m=i
+print(m)
+
+#####
+
+##To generate a list with sequence of elements
+
+b=[i for i in range(10)]
+a=[0,1,2,3,4,5,6,7,8,9]
+print(a)
+b=[i for i in range(10)]
+print(b)
+
+#####
+
+b=[i for i in range(5,11)]
+print(b)
+
+#####
+
+b=[i*i for i in range(1,6)]
+print(b)
+
+#####
+
+##to find index position:
+
+a=[2,4,3,5,6,0,8,4]
+b=int(input('enter a number: '))
+z=0
+for i in a:
+    if i==b:
+        print(z)
+        break
+    z+=1
+
+#####
+
+a=[2,4,3,5,6,0,8,4]
+b=int(input('enter a number: '))
+for i in range(len(a)):
+    if b==a[i]:
+        print(i)
+        break
+
+##To print even and odd numbers:
+
+a=[2,3,6,8,5]
+e=[]
+o=[]
+for i in a:
+    if i%2==0:
+        e.append(i)
+    else:
+        o.append(i)
+print(e)
+print(o)
+
+#####
+
+##Even index position:
+
+a=[2,3,6,8,5,9]
+e=[]
+o=[]
+z=0
+for i in a:
+    if z%2==0:
+        e.append(i)
+    else:
+        o.append(i)
+    z+=1
+print(e)
+print(o)
+
+#####
+
+##To print addition of even and odd numbers:
+
+a=[2,3,6,8,5]
+e=[]
+o=[]
+for i in a:
+    if i%2==0:
+        e.append(i)
+    else:
+        o.append(i)
+print(sum(e))
+print(sum(o))
