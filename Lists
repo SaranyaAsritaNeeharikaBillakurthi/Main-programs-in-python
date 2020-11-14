@@ -185,3 +185,111 @@ for i in a:
         o.append(i)
 print(sum(e))
 print(sum(o))
+
+##Program to remove second element(all duplicates):
+
+a=[3,4,5,2,6,3,7]
+print(a)
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
+##TOprint second maximum in the list:
+
+a=[3,5,4,8,8,7]
+a.sort()
+if a[-1]==a[-2]:
+    print(a[-3])
+else:
+    print(a[-2])
+
+##while loop
+
+a=[3,5,4,8,8,8,7]
+a.sort()
+i=-1
+while True:
+    if a[i]==a[i-1]:
+        print(a[i-2])
+    else:
+        print(a[i-1])
+    i-=1
+
+##for loop
+
+a=[3,5,4,8,8,7,8]
+a.sort()
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b[-2])
+
+##To print how many prime numbers in list:
+
+def prime(n):
+    a=[7,3,6,4,11,14,17]
+    cnt=0
+    for i in a:
+        if prime(i)==True:
+            cnt+=1
+print(cnt)
+
+##List in ascending order or not:
+
+a=[2,5,8,9,6,11]
+b=a.copy()
+if a==b:
+    print('yes')
+else:
+    print('no')
+
+##Elements which are not in b (or) a:
+
+a=[2,4,7,5,3]
+b=[4,7,3]
+for i in a:
+    if i not in b:
+        print(i)
+
+##Descending order:
+
+a=[9,8,5,2,10]
+b=a.copy()
+b.sort(reverse=True)
+if a==b:
+    print('yes')
+else:
+    print('no')
+       
+##concatenating strings:
+
+a=['m','sub','i','pyt']
+b=['y','ject','s','thon']
+c=[]
+for i in range(len(a)):
+    c.append(a[i]+b[i])
+print(c)
+
+#####
+
+a=['program','java']
+b=['python','java']
+c=[]
+for i in a:
+    for j in b:
+        c.append(i+j)
+print(i)
+
+##Common elements:
+
+a=[2,4,7,5,3]
+b=[4,3,7,9,11]
+for i in a:
+    if i in b:
+        print(i)
+for j in b:
+    if j not in a:
+        print(j)
