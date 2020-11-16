@@ -1,0 +1,29 @@
+##create
+
+a=open('c:\users\abcd\Desktop\Codemind\example.txt','x')
+a.close()
+
+##write
+
+a=open('example.txt','w')
+a=write('hi,file handling class')
+a.close()
+
+##Read
+
+a=open('example.txt','r')
+b=a.read()
+a.close()
+print(b)
+
+##Delete
+
+import OS
+OS.remove('example.txt')
+
+#####
+
+##To remove all files in folder
+
+import OS
+OS.rmdir('sample')
